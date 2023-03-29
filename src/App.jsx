@@ -1,5 +1,7 @@
 import './App.css'
 import { useState, useEffect } from "react";
+
+import CoinInfo from './Components/CoinInfo.jsx'
 // import CoinInfo from './Components/CoinInfo';
 // import CoinInfo from "./Components/coinInfo";
 export default function App() {
@@ -52,7 +54,13 @@ export default function App() {
         {console.log(list)}
         {list && Object.entries(list.Data).map(([coin]) =>
           list.Data[coin].PlatformType === "blockchain" ? (
-            <li key={list.Data[coin].FullName}>{list.Data[coin].FullName}</li>
+            <CoinInfo
+  image={list.Data[coin].ImageUrl}
+  name={list.Data[coin].FullName}
+  symbol={list.Data[coin].Symbol}
+  />
+
+            
           ) : null
         )}
       </ul>
