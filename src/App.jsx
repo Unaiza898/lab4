@@ -1,7 +1,7 @@
 import './App.css'
 import { useState, useEffect } from "react";
 // import CoinInfo from './Components/CoinInfo';
-import CoinInfo from "./Components/coinInfo";
+// import CoinInfo from "./Components/coinInfo";
 export default function App() {
 
   const API_KEY = "3eb132ce569ebbf66ab36f1ec1a3ec497afe367449cba6794dc6cc5718b64cfd";
